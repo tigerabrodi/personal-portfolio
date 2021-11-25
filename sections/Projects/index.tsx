@@ -48,13 +48,21 @@ export const Projects = () => {
                 <source src={demoSource} />
               </ItemDemo>
               <Link href={sourceCodeLink} passHref>
-                <ItemCodeLink target="_blank" rel="noopener noreferrer">
+                <ItemCodeLink
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Source code of ${title} (opens in a new tab)`}
+                >
                   <Github aria-hidden="true" />
                   Code
                 </ItemCodeLink>
               </Link>
               <Link href={liveVersionLink} passHref>
-                <ItemLiveLink target="_blank" rel="noopener noreferrer">
+                <ItemLiveLink
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Live version of ${title} (opens in a new tab)`}
+                >
                   <External aria-hidden="true" />
                   Live
                 </ItemLiveLink>
