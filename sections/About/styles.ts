@@ -53,7 +53,7 @@ export const AboutImage = styled.img`
   }
 `;
 
-export const AboutTitle = styled.h1`
+export const AboutTitle = styled.h2`
   font-family: ${theme.Oxanium};
   color: ${theme.Pink};
   font-weight: 600;

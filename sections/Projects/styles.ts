@@ -25,7 +25,7 @@ export const WorkSection = styled.section<{ shouldFadeIn: boolean }>`
     `};
 `;
 
-export const WorkTitle = styled.h1`
+export const WorkTitle = styled.h2`
   font-family: ${theme.Oxanium};
   font-weight: 600;
   font-size: 3rem;
@@ -100,7 +100,7 @@ export const WorkItem = styled.li`
   }
 `;
 
-export const ItemTitle = styled.h2`
+export const ItemTitle = styled.h3`
   grid-area: title;
   font-weight: 600;
   font-family: ${theme.Oxanium};

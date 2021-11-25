@@ -29,7 +29,7 @@ export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
     `};
 `;
 
-export const ContactTitle = styled.h1`
+export const ContactTitle = styled.h2`
   grid-area: title;
   font-family: ${theme.Oxanium};
   font-weight: 600;

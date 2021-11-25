@@ -23,7 +23,7 @@ export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
     `};
 `;
 
-export const ExperienceTitle = styled.h1`
+export const ExperienceTitle = styled.h2`
   font-family: ${theme.Oxanium};
   font-size: 3rem;
   font-weight: 600;
