@@ -49,7 +49,7 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
           </SkipLink>
         </Link>
         <Link href="/" passHref>
-          <LogoLink>Tiger Abrodi</LogoLink>
+          <LogoLink aria-label="To top">Tiger Abrodi</LogoLink>
         </Link>
         {isTabletLayout && (
           <NavigationTabletWrapper>
