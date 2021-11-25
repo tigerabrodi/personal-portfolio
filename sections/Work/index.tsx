@@ -17,12 +17,14 @@ import { useOnScreen } from "../../hooks/useOnScreen";
 import { projects } from "./projects";
 
 export const Work = () => {
-  const { isVisible, setIntersectingElement } = useOnScreen();
+  const { isVisible, setIntersectingElement } = useOnScreen({
+    threshold: 0.18,
+  });
 
   return (
     <WorkSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
-      <WorkTitle id="work" tabIndex={-1}>
-        Work.
+      <WorkTitle id="projects" tabIndex={-1}>
+        Projects.
       </WorkTitle>
       <WorkDescription>
         Some recent side projects I have built, including demos, titles,
