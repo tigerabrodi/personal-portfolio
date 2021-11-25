@@ -10,12 +10,12 @@ export const firstTechnologyList = [
 ];
 
 export const secondTechnologyList = [
-  { text: "Storybook", id: 1 },
-  { text: "Puppeteer", id: 2 },
-  { text: "Firebase", id: 3 },
-  { text: "Styled Components", id: 4 },
-  { text: "Interviewing", id: 5 },
-  { text: "Accessibility", id: 6 },
-  { text: "Figma", id: 7 },
-  { text: "Testing Library", id: 8 },
+  { text: "Storybook", id: 9 },
+  { text: "Puppeteer", id: 10 },
+  { text: "Firebase", id: 11 },
+  { text: "Styled Components", id: 12 },
+  { text: "Interviewing", id: 13 },
+  { text: "Accessibility", id: 14 },
+  { text: "Figma", id: 15 },
+  { text: "Testing Library", id: 16 },
 ];
