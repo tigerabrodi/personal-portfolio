@@ -24,11 +24,17 @@ const Page: NextPage = () => {
         <meta name="twitter:site" content="@TAbrodi" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="/assets/avatar.jpeg" />
+        <meta
+          name="twitter:image"
+          content="https://www.tigerabrodi.tech/assets/avatar.jpeg"
+        />
 
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content="/assets/avatar.jpeg" />
+        <meta
+          property="og:image"
+          content="https://www.tigerabrodi.tech/assets/avatar.jpeg"
+        />
       </Head>
       <Navigation mainRef={mainRef} />
       <main id="main" ref={mainRef} tabIndex={-1}>
