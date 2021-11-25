@@ -16,7 +16,7 @@ import {
 import { useOnScreen } from "../../hooks/useOnScreen";
 import { projects } from "./projects";
 
-export const Work = () => {
+export const Projects = () => {
   const { isVisible, setIntersectingElement } = useOnScreen({
     threshold: 0.18,
   });
