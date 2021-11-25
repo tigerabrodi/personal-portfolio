@@ -60,7 +60,7 @@ export const Experience = () => {
             >
               {contributions.map((contribution) => (
                 <AccordionContentItem key={uuidv4()}>
-                  <AccordionRightArrow aria-hidden="true" />
+                  <AccordionRightArrow aria-hidden="true" id={uuidv4()} />
                   <AccordionContentText>{contribution}</AccordionContentText>
                 </AccordionContentItem>
               ))}

@@ -48,7 +48,7 @@ export const About = () => {
           <TechnologiesList>
             {firstTechnologyList.map(({ text, id }) => (
               <TechnologyItem key={id}>
-                <RightArrow aria-hidden="true" />
+                <RightArrow aria-hidden="true" id={id} />
                 <TechnologyText>{text}</TechnologyText>
               </TechnologyItem>
             ))}
@@ -57,7 +57,7 @@ export const About = () => {
           <TechnologiesList>
             {secondTechnologyList.map(({ text, id }) => (
               <TechnologyItem key={id}>
-                <RightArrow aria-hidden="true" />
+                <RightArrow aria-hidden="true" id={id} />
                 <TechnologyText>{text}</TechnologyText>
               </TechnologyItem>
             ))}
