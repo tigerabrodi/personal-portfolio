@@ -28,7 +28,7 @@ type MainRefProps = {
   mainRef: React.MutableRefObject<HTMLElement | null>;
 };
 
-type Ids = "about" | "experience" | "work" | "contact";
+type Ids = "about" | "experience" | "projects" | "contact";
 
 export const Navigation = ({ mainRef }: MainRefProps) => {
   const { isVisible, setIntersectingElement } = useOnScreen();
@@ -61,8 +61,10 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
                 Experience.
               </NavLink>
             </Link>
-            <Link href="#work" passHref>
-              <NavLink onClick={() => focusOnSection("work")}>Work.</NavLink>
+            <Link href="#projects" passHref>
+              <NavLink onClick={() => focusOnSection("projects")}>
+                Projects.
+              </NavLink>
             </Link>
             <Link href="#contact" passHref>
               <NavLink onClick={() => focusOnSection("contact")}>
@@ -126,10 +128,10 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
               <LinkText>Experience</LinkText>
             </NavLink>
           </Link>
-          <Link href="#work" passHref>
+          <Link href="#projects" passHref>
             <NavLink>
               <HammerSVG aria-hidden="true" />
-              <LinkText>Work</LinkText>
+              <LinkText>Projects</LinkText>
             </NavLink>
           </Link>
           <Link href="#contact" passHref>
