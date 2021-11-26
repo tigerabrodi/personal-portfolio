@@ -16,6 +16,7 @@ to {
 
 export const TigerSVG = styled.svg`
   filter: drop-shadow(0 0.1rem 0.2rem ${theme.Orange});
+  transform: translate(-50%, -50%);
   position: absolute;
   top: 78%;
   height: 20rem;
