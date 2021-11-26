@@ -138,28 +138,33 @@ export const IconLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  will-change: transform;
   ${media.custom(410)} {
     width: 2.4rem;
     height: 2.4rem;
   }
   &:nth-of-type(1) {
-    animation: ${fadeUp} 0.3s 1.2s both ease-out;
-    will-change: transform;
+    ${media.noReducedMotion} {
+      animation: ${fadeUp} 0.3s 1.2s both ease-out;
+    }
   }
 
   &:nth-of-type(2) {
-    animation: ${fadeUp} 0.3s 1.3s both ease-out;
-    will-change: transform;
+    ${media.noReducedMotion} {
+      animation: ${fadeUp} 0.3s 1.3s both ease-out;
+    }
   }
 
   &:nth-of-type(3) {
-    animation: ${fadeUp} 0.3s 1.5s both ease-out;
-    will-change: transform;
+    ${media.noReducedMotion} {
+      animation: ${fadeUp} 0.3s 1.5s both ease-out;
+    }
   }
 
   &:nth-of-type(4) {
-    animation: ${fadeUp} 0.3s 1.6s both ease-out;
-    will-change: transform;
+    ${media.noReducedMotion} {
+      animation: ${fadeUp} 0.3s 1.6s both ease-out;
+    }
   }
   .icon {
     width: 80%;

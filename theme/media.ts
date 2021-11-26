@@ -7,4 +7,5 @@ export const media = {
   laptop: customMediaQuery(1550),
   tablet: customMediaQuery(768),
   phone: customMediaQuery(425),
+  noReducedMotion: `@media (prefers-reduced-motion: no-preference)`,
 };

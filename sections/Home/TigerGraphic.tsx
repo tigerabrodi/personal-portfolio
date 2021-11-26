@@ -16,12 +16,14 @@ to {
 
 export const TigerSVG = styled.svg`
   filter: drop-shadow(0 0.1rem 0.2rem ${theme.Orange});
-  animation: ${fadeUp} 0.3s 1s both ease-out;
-  will-change: transform;
   position: absolute;
   top: 78%;
   height: 20rem;
   left: 22.5rem;
+  ${media.noReducedMotion} {
+    animation: ${fadeUp} 0.3s 1s both ease-out;
+    will-change: transform;
+  }
   ${media.custom(360)} {
     left: 24.5rem;
     height: 25rem;
