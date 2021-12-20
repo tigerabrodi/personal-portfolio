@@ -1,21 +1,27 @@
+import { v4 } from "uuid";
+
 export const firstTechnologyList = [
-  { text: "React", id: 1 },
-  { text: "GraphQL (URQL)", id: 2 },
-  { text: "TypeScript", id: 3 },
-  { text: "Jest", id: 4 },
-  { text: "Cypress", id: 5 },
-  { text: "TDD", id: 6 },
-  { text: "NextJS", id: 7 },
-  { text: "XP Practices", id: 8 },
+  { text: "React", id: v4() },
+  { text: "GraphQL (URQL)", id: v4() },
+  { text: "TypeScript", id: v4() },
+  { text: "Jest", id: v4() },
+  { text: "Cypress", id: v4() },
+  { text: "TDD", id: v4() },
+  { text: "NextJS", id: v4() },
+  { text: "XP Practices", id: v4() },
+  { text: "Remix", id: v4() },
+  { text: "Tailwind", id: v4() },
 ];
 
 export const secondTechnologyList = [
-  { text: "Storybook", id: 9 },
-  { text: "Puppeteer", id: 10 },
-  { text: "Firebase", id: 11 },
-  { text: "Styled Components", id: 12 },
-  { text: "Interviewing", id: 13 },
-  { text: "Accessibility", id: 14 },
-  { text: "Figma", id: 15 },
-  { text: "Testing Library", id: 16 },
+  { text: "Storybook", id: v4() },
+  { text: "Puppeteer", id: v4() },
+  { text: "Firebase", id: v4() },
+  { text: "Styled Components", id: v4() },
+  { text: "Interviewing", id: v4() },
+  { text: "Accessibility", id: v4() },
+  { text: "Figma", id: v4() },
+  { text: "Testing Library", id: v4() },
+  { text: "Planetscale", id: v4() },
+  { text: "Prisma", id: v4() },
 ];
