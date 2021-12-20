@@ -1,9 +1,9 @@
-import styled, { css } from "styled-components";
-import { theme } from "../../theme/theme";
-import GithubSVG from "../../assets/github.svg";
-import ExternalSVG from "../../assets/external.svg";
-import { focusStyles } from "../../theme/sharedStyles";
-import { media } from "../../theme/media";
+import styled, { css } from 'styled-components'
+import { theme } from '../../theme/theme'
+import GithubSVG from '../../assets/github.svg'
+import ExternalSVG from '../../assets/external.svg'
+import { focusStyles } from '../../theme/sharedStyles'
+import { media } from '../../theme/media'
 
 export const WorkSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
@@ -23,7 +23,7 @@ export const WorkSection = styled.section<{ shouldFadeIn: boolean }>`
       transform: translateY(-2rem);
       opacity: 1;
     `};
-`;
+`
 
 export const WorkTitle = styled.h2`
   font-family: ${theme.Oxanium};
@@ -36,7 +36,7 @@ export const WorkTitle = styled.h2`
   ${media.desktop} {
     font-size: 8rem;
   }
-`;
+`
 
 export const WorkDescription = styled.p`
   line-height: 1.4;
@@ -57,7 +57,7 @@ export const WorkDescription = styled.p`
   ${media.desktop} {
     font-size: 2.8rem;
   }
-`;
+`
 
 export const WorkList = styled.ul`
   display: flex;
@@ -75,13 +75,13 @@ export const WorkList = styled.ul`
     margin-top: 50px;
     row-gap: 10rem;
   }
-`;
+`
 
 export const WorkItem = styled.li`
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-areas: "title title" "description description" "demo demo" "code live";
+  grid-template-areas: 'title title' 'description description' 'demo demo' 'code live';
   border-bottom: 2px solid ${theme.Orange};
   box-shadow: 0 0.3rem 1rem black;
   padding: 15px 0;
@@ -98,7 +98,7 @@ export const WorkItem = styled.li`
     padding: 30px 0;
     border-bottom: 5px solid ${theme.Orange};
   }
-`;
+`
 
 export const ItemTitle = styled.h3`
   grid-area: title;
@@ -116,7 +116,7 @@ export const ItemTitle = styled.h3`
   ${media.desktop} {
     font-size: 5rem;
   }
-`;
+`
 
 export const ItemDescription = styled.p`
   grid-area: description;
@@ -134,7 +134,7 @@ export const ItemDescription = styled.p`
   ${media.desktop} {
     font-size: 2.5rem;
   }
-`;
+`
 
 export const ItemDemo = styled.video`
   grid-area: demo;
@@ -150,7 +150,7 @@ export const ItemDemo = styled.video`
     width: 49rem;
     height: 31rem;
   }
-`;
+`
 
 const linkStyles = css`
   font-weight: 600;
@@ -183,23 +183,23 @@ const linkStyles = css`
     font-size: 3.5rem;
     margin-top: 70px;
   }
-`;
+`
 
 export const ItemCodeLink = styled.a`
   grid-area: code;
   ${linkStyles}
-`;
+`
 
 export const ItemLiveLink = styled.a`
   grid-area: live;
   ${linkStyles}
-`;
+`
 
 const iconStyles = css`
   fill: ${theme.Pink};
   position: absolute;
   right: 0;
-`;
+`
 
 export const Github = styled(GithubSVG)`
   top: -1.1rem;
@@ -226,7 +226,7 @@ export const Github = styled(GithubSVG)`
     top: -2rem;
     left: 7.2rem;
   }
-`;
+`
 
 export const External = styled(ExternalSVG)`
   top: -0.9rem;
@@ -247,4 +247,4 @@ export const External = styled(ExternalSVG)`
     top: -1.8rem;
     left: 6.2rem;
   }
-`;
+`

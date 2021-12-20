@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
-import { RightArrowIcon } from "../../icons/RightArrow";
-import { media } from "../../theme/media";
-import { theme } from "../../theme/theme";
+import styled, { css } from 'styled-components'
+import { RightArrowIcon } from '../../icons/RightArrow'
+import { media } from '../../theme/media'
+import { theme } from '../../theme/theme'
 
 export const AboutSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
@@ -32,7 +32,7 @@ export const AboutSection = styled.section<{ shouldFadeIn: boolean }>`
       transform: translateY(-2rem);
       opacity: 1;
     `};
-`;
+`
 
 export const AboutImage = styled.img`
   height: 100%;
@@ -51,7 +51,7 @@ export const AboutImage = styled.img`
     width: 30rem;
     height: 30rem;
   }
-`;
+`
 
 export const AboutTitle = styled.h2`
   font-family: ${theme.Oxanium};
@@ -66,7 +66,7 @@ export const AboutTitle = styled.h2`
   ${media.desktop} {
     font-size: 8rem;
   }
-`;
+`
 
 export const AboutTextWrapper = styled.p`
   display: flex;
@@ -95,11 +95,11 @@ export const AboutTextWrapper = styled.p`
     font-size: 2.3rem;
     font-weight: 500;
   }
-`;
+`
 
 export const AboutText = styled.span`
   display: block;
-`;
+`
 
 export const TechnologiesWrapper = styled.div`
   display: flex;
@@ -115,7 +115,7 @@ export const TechnologiesWrapper = styled.div`
     grid-column: 2 / 3;
     grid-row: 1 / -1;
   }
-`;
+`
 
 export const TechnologiesText = styled.p`
   font-family: ${theme.Montserrat};
@@ -134,7 +134,7 @@ export const TechnologiesText = styled.p`
   ${media.desktop} {
     font-size: 2.5rem;
   }
-`;
+`
 
 export const TechnologiesContainer = styled.div`
   display: flex;
@@ -149,7 +149,7 @@ export const TechnologiesContainer = styled.div`
     width: 100%;
     height: 100%;
   }
-`;
+`
 
 export const TechnologiesList = styled.ul`
   height: 100%;
@@ -166,14 +166,14 @@ export const TechnologiesList = styled.ul`
     width: auto;
     margin-top: 70px;
   }
-`;
+`
 
 export const TechnologyItem = styled.li`
   height: 1rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-`;
+`
 
 export const RightArrow = styled(RightArrowIcon)`
   height: 1rem;
@@ -182,7 +182,7 @@ export const RightArrow = styled(RightArrowIcon)`
     height: 1.7rem;
     width: 1.7rem;
   }
-`;
+`
 
 export const TechnologyText = styled.span`
   font-weight: 500;
@@ -197,4 +197,4 @@ export const TechnologyText = styled.span`
   ${media.desktop} {
     font-size: 1.9rem;
   }
-`;
+`

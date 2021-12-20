@@ -1,5 +1,5 @@
 export const TwitterIcon = () => {
-  const uniqueId = "twitter";
+  const uniqueId = 'twitter'
 
   return (
     <svg
@@ -20,5 +20,5 @@ export const TwitterIcon = () => {
         </clipPath>
       </defs>
     </svg>
-  );
-};
+  )
+}

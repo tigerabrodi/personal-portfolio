@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { TigerGraphic } from "./TigerGraphic";
+import Link from 'next/link'
+import { TigerGraphic } from './TigerGraphic'
 import {
   HomeDescription,
   HomeLink,
@@ -9,7 +9,7 @@ import {
   HomeWrapper,
   DescriptionLink,
   LinkWrapper,
-} from "./styles";
+} from './styles'
 
 export const Home = () => (
   <HomeSection>
@@ -18,14 +18,14 @@ export const Home = () => (
       <HomeSubtitle>I craft things for the web.</HomeSubtitle>
       <HomeDescription>
         I’m a Software Craftsman based in Germany who is heavily into
-        Accessibility and Testing. I like building side projects,{" "}
+        Accessibility and Testing. I like building side projects,{' '}
         <Link href="https://tigerabrodi.hashnode.dev/" passHref>
           <DescriptionLink target="_blank" rel="noopener noreferrer">
             writing blog posts,
           </DescriptionLink>
-        </Link>{" "}
+        </Link>{' '}
         contributing to Open Source, volunteering in communities (KCD, OSRG,
-        Testing Library, Mock Service Worker) and{" "}
+        Testing Library, Mock Service Worker) and{' '}
         <Link
           href="https://www.goodreads.com/review/list/127384537-tiger-abrodi?ref=nav_mybooks&shelf=read"
           passHref
@@ -33,7 +33,7 @@ export const Home = () => (
           <DescriptionLink target="_blank" rel="noopener noreferrer">
             reading books.
           </DescriptionLink>
-        </Link>{" "}
+        </Link>{' '}
       </HomeDescription>
       <LinkWrapper>
         <Link href="mailto:tigerabrodi@gmail.com" passHref>
@@ -43,4 +43,4 @@ export const Home = () => (
     </HomeWrapper>
     <TigerGraphic />
   </HomeSection>
-);
+)

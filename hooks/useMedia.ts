@@ -1,24 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
-type Direction = "max" | "min";
+type Direction = 'max' | 'min'
 
 export const useMedia = (direction: Direction, width: string) => {
-  const [isLayout, setIsLayout] = useState(false);
+  const [isLayout, setIsLayout] = useState(false)
 
   useEffect(() => {
     const checkLayout = () => {
       const isLayout = window.matchMedia(
         `(${direction}-width: ${width}px)`
-      ).matches;
-      setIsLayout(isLayout);
-    };
+      ).matches
+      setIsLayout(isLayout)
+    }
 
-    checkLayout();
-    window.addEventListener("resize", checkLayout);
+    checkLayout()
+    window.addEventListener('resize', checkLayout)
     return () => {
-      window.removeEventListener("resize", checkLayout);
-    };
-  }, [direction, width]);
+      window.removeEventListener('resize', checkLayout)
+    }
+  }, [direction, width])
 
-  return isLayout;
-};
+  return isLayout
+}

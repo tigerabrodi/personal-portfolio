@@ -1,7 +1,7 @@
-import * as React from "react";
-import { useOnScreen } from "../../hooks/useOnScreen";
-import { v4 as uuidv4 } from "uuid";
-import { experiences } from "./experiences";
+import * as React from 'react'
+import { useOnScreen } from '../../hooks/useOnScreen'
+import { v4 as uuidv4 } from 'uuid'
+import { experiences } from './experiences'
 import {
   ExperienceDescription,
   ExperienceItem,
@@ -17,14 +17,14 @@ import {
   AccordionContentItem,
   AccordionRightArrow,
   AccordionContentText,
-} from "./styles";
+} from './styles'
 
 export const Experience = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false)
 
-  const { isVisible, setIntersectingElement } = useOnScreen({ threshold: 0.5 });
+  const { isVisible, setIntersectingElement } = useOnScreen({ threshold: 0.5 })
 
-  const toggleOpenState = () => setIsOpen(!isOpen);
+  const toggleOpenState = () => setIsOpen(!isOpen)
 
   return (
     <ExperienceSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
@@ -39,7 +39,7 @@ export const Experience = () => {
           <ExperienceItem key={id}>
             <AccordionButton
               aria-controls={`content-${id}`}
-              aria-expanded={isOpen ? "true" : "false"}
+              aria-expanded={isOpen ? 'true' : 'false'}
               type="button"
               onClick={toggleOpenState}
             >
@@ -55,7 +55,7 @@ export const Experience = () => {
               )}
             </AccordionButton>
             <AccordionContent
-              aria-hidden={isOpen ? "false" : "true"}
+              aria-hidden={isOpen ? 'false' : 'true'}
               id={`content-${id}`}
             >
               {contributions.map((contribution) => (
@@ -69,5 +69,5 @@ export const Experience = () => {
         ))}
       </ExperienceItemList>
     </ExperienceSection>
-  );
-};
+  )
+}

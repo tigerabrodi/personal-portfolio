@@ -1,6 +1,6 @@
-import styled, { keyframes } from "styled-components";
-import { media } from "../../theme/media";
-import { theme } from "../../theme/theme";
+import styled, { keyframes } from 'styled-components'
+import { media } from '../../theme/media'
+import { theme } from '../../theme/theme'
 
 const fadeUp = keyframes`
 from {
@@ -12,7 +12,7 @@ to {
   transform: translate(-50%, -50%);
   opacity: 1;
 }
-`;
+`
 
 export const TigerSVG = styled.svg`
   filter: drop-shadow(0 0.1rem 0.2rem ${theme.Orange});
@@ -51,7 +51,7 @@ export const TigerSVG = styled.svg`
     left: 70%;
     top: 57%;
   }
-`;
+`
 
 export const TigerGraphic = () => (
   <TigerSVG
@@ -78,4 +78,4 @@ export const TigerGraphic = () => (
       </clipPath>
     </defs>
   </TigerSVG>
-);
+)

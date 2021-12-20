@@ -1,11 +1,11 @@
-import * as React from "react";
-import Link from "next/link";
-import GithubSVG from "../../assets/github.svg";
-import PenSVG from "../../assets/pen.svg";
-import HammerSVG from "../../assets/hammer.svg";
-import FaceSVG from "../../assets/face.svg";
-import TimelineSVG from "../../assets/timeline.svg";
-import MailSVG from "../../assets/mail.svg";
+import * as React from 'react'
+import Link from 'next/link'
+import GithubSVG from '../../assets/github.svg'
+import PenSVG from '../../assets/pen.svg'
+import HammerSVG from '../../assets/hammer.svg'
+import FaceSVG from '../../assets/face.svg'
+import TimelineSVG from '../../assets/timeline.svg'
+import MailSVG from '../../assets/mail.svg'
 import {
   LogoLink,
   NarutoFace,
@@ -18,26 +18,26 @@ import {
   SkipLink,
   IntersectingElement,
   NavigationTabletWrapper,
-} from "./styles";
-import { useOnScreen } from "../../hooks/useOnScreen";
-import { useMedia } from "../../hooks/useMedia";
-import { LinkedInIcon } from "../../icons/LinkedIn";
-import { TwitterIcon } from "../../icons/Twitter";
+} from './styles'
+import { useOnScreen } from '../../hooks/useOnScreen'
+import { useMedia } from '../../hooks/useMedia'
+import { LinkedInIcon } from '../../icons/LinkedIn'
+import { TwitterIcon } from '../../icons/Twitter'
 
 type MainRefProps = {
-  mainRef: React.MutableRefObject<HTMLElement | null>;
-};
+  mainRef: React.MutableRefObject<HTMLElement | null>
+}
 
-type Ids = "about" | "experience" | "projects" | "contact";
+type Ids = 'about' | 'experience' | 'projects' | 'contact'
 
 export const Navigation = ({ mainRef }: MainRefProps) => {
-  const { isVisible, setIntersectingElement } = useOnScreen();
-  const isTabletLayout = useMedia("min", "768");
+  const { isVisible, setIntersectingElement } = useOnScreen()
+  const isTabletLayout = useMedia('min', '768')
 
   const focusOnSection = (id: Ids) => {
-    const focusTarget = document.querySelector(`#${id}`) as HTMLElement;
-    focusTarget.focus();
-  };
+    const focusTarget = document.querySelector(`#${id}`) as HTMLElement
+    focusTarget.focus()
+  }
 
   return (
     <>
@@ -54,20 +54,20 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
         {isTabletLayout && (
           <NavigationTabletWrapper>
             <Link href="#about" passHref>
-              <NavLink onClick={() => focusOnSection("about")}>About.</NavLink>
+              <NavLink onClick={() => focusOnSection('about')}>About.</NavLink>
             </Link>
             <Link href="#experience" passHref>
-              <NavLink onClick={() => focusOnSection("experience")}>
+              <NavLink onClick={() => focusOnSection('experience')}>
                 Experience.
               </NavLink>
             </Link>
             <Link href="#projects" passHref>
-              <NavLink onClick={() => focusOnSection("projects")}>
+              <NavLink onClick={() => focusOnSection('projects')}>
                 Projects.
               </NavLink>
             </Link>
             <Link href="#contact" passHref>
-              <NavLink onClick={() => focusOnSection("contact")}>
+              <NavLink onClick={() => focusOnSection('contact')}>
                 Contact.
               </NavLink>
             </Link>
@@ -143,5 +143,5 @@ export const Navigation = ({ mainRef }: MainRefProps) => {
         </MobileNavigationWrapper>
       </NavigationWrapper>
     </>
-  );
-};
+  )
+}

@@ -1,10 +1,10 @@
-import styled, { css } from "styled-components";
-import { focusStyles } from "../../theme/sharedStyles";
-import { theme } from "../../theme/theme";
-import DownArrowSVG from "../../assets/down-arrow.svg";
-import UpArrowSVG from "../../assets/up-arrow.svg";
-import { media } from "../../theme/media";
-import { RightArrowIcon } from "../../icons/RightArrow";
+import styled, { css } from 'styled-components'
+import { focusStyles } from '../../theme/sharedStyles'
+import { theme } from '../../theme/theme'
+import DownArrowSVG from '../../assets/down-arrow.svg'
+import UpArrowSVG from '../../assets/up-arrow.svg'
+import { media } from '../../theme/media'
+import { RightArrowIcon } from '../../icons/RightArrow'
 
 export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
@@ -21,7 +21,7 @@ export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
       transform: translateY(-2rem);
       opacity: 1;
     `};
-`;
+`
 
 export const ExperienceTitle = styled.h2`
   font-family: ${theme.Oxanium};
@@ -34,7 +34,7 @@ export const ExperienceTitle = styled.h2`
   ${media.desktop} {
     font-size: 8rem;
   }
-`;
+`
 
 export const ExperienceDescription = styled.p`
   line-height: 1.5;
@@ -53,7 +53,7 @@ export const ExperienceDescription = styled.p`
     font-size: 3rem;
     width: 40ch;
   }
-`;
+`
 
 export const ExperienceItemList = styled.ul`
   display: flex;
@@ -64,7 +64,7 @@ export const ExperienceItemList = styled.ul`
   ${media.tablet} {
     margin-top: 80px;
   }
-`;
+`
 
 export const ExperienceItem = styled.li`
   display: flex;
@@ -80,7 +80,7 @@ export const ExperienceItem = styled.li`
   ${media.desktop} {
     width: 65rem;
   }
-`;
+`
 
 export const AccordionButton = styled.button`
   width: 100%;
@@ -90,7 +90,7 @@ export const AccordionButton = styled.button`
   border-radius: 5px;
   background-color: ${theme.Orange};
   display: grid;
-  grid-template-areas: "text arrow";
+  grid-template-areas: 'text arrow';
   grid-template-columns: 70% 30%;
   grid-template-rows: 80%;
   box-shadow: 0 2px 2px black, 0 2px 3px black, 0 2px 4px black;
@@ -103,7 +103,7 @@ export const AccordionButton = styled.button`
   font-size: 1rem;
   color: ${theme.DarkBrown};
   border: none;
-  &[aria-expanded="true"] {
+  &[aria-expanded='true'] {
     font-weight: bold;
     box-shadow: none;
   }
@@ -114,7 +114,7 @@ export const AccordionButton = styled.button`
     height: 8rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    &[aria-expanded="false"] {
+    &[aria-expanded='false'] {
       &:hover {
         transition: all 0.15s ease-in-out;
         box-shadow: 0 6px 4px black;
@@ -132,7 +132,7 @@ export const AccordionButton = styled.button`
     height: 9rem;
     grid-template-rows: 85%;
   }
-`;
+`
 
 export const AccordionContent = styled.ul`
   visibility: hidden;
@@ -148,7 +148,7 @@ export const AccordionContent = styled.ul`
     transition: visibility 0.1s ease-in;
     visibility: hidden;
   }
-  &[aria-hidden="false"] {
+  &[aria-hidden='false'] {
     visibility: visible;
     display: flex;
     flex-direction: column;
@@ -174,7 +174,7 @@ export const AccordionContent = styled.ul`
       transition: visibility 0.1s ease-out;
     }
   }
-`;
+`
 
 export const AccordionButtonTextWrapper = styled.div`
   grid-area: text;
@@ -191,11 +191,11 @@ export const AccordionButtonTextWrapper = styled.div`
   ${media.desktop} {
     font-size: 1.7rem;
   }
-`;
+`
 
 export const AccordionButtonText = styled.span`
   padding-left: 7.5px;
-`;
+`
 
 export const AccordionOpenArrow = styled(DownArrowSVG)`
   width: 3rem;
@@ -209,7 +209,7 @@ export const AccordionOpenArrow = styled(DownArrowSVG)`
     width: 7rem;
     height: 4rem;
   }
-`;
+`
 
 export const AccordionCloseArrow = styled(UpArrowSVG)`
   width: 3rem;
@@ -224,7 +224,7 @@ export const AccordionCloseArrow = styled(UpArrowSVG)`
     height: 4rem;
     width: 7rem;
   }
-`;
+`
 
 export const AccordionContentItem = styled.li`
   display: flex;
@@ -235,7 +235,7 @@ export const AccordionContentItem = styled.li`
   ${media.tablet} {
     padding-left: 20px;
   }
-`;
+`
 
 export const AccordionRightArrow = styled(RightArrowIcon)`
   min-height: 1rem;
@@ -252,7 +252,7 @@ export const AccordionRightArrow = styled(RightArrowIcon)`
     width: 1.7rem;
     height: 1.7rem;
   }
-`;
+`
 
 export const AccordionContentText = styled.p`
   font-family: ${theme.Montserrat};
@@ -277,4 +277,4 @@ export const AccordionContentText = styled.p`
   ${media.laptop} {
     line-height: 1.5;
   }
-`;
+`

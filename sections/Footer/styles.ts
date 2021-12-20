@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import HeartSVG from "../../assets/heart.svg";
-import ExternalSVG from "../../assets/external.svg";
-import { theme } from "../../theme/theme";
-import { media } from "../../theme/media";
-import { focusStyles } from "../../theme/sharedStyles";
+import styled from 'styled-components'
+import HeartSVG from '../../assets/heart.svg'
+import ExternalSVG from '../../assets/external.svg'
+import { theme } from '../../theme/theme'
+import { media } from '../../theme/media'
+import { focusStyles } from '../../theme/sharedStyles'
 
 export const FooterWrapper = styled.footer`
   height: 13rem;
@@ -21,7 +21,7 @@ export const FooterWrapper = styled.footer`
   ${media.desktop} {
     height: 17rem;
   }
-`;
+`
 
 export const FooterText = styled.p`
   font-family: ${theme.Oxanium};
@@ -33,7 +33,7 @@ export const FooterText = styled.p`
   ${media.tablet} {
     font-size: 2.3rem;
   }
-`;
+`
 
 export const Heart = styled(HeartSVG)`
   height: 2rem;
@@ -44,7 +44,7 @@ export const Heart = styled(HeartSVG)`
     height: 4rem;
     margin: 0 7.5px;
   }
-`;
+`
 
 export const FooterLink = styled.a`
   color: ${theme.Pink};
@@ -55,7 +55,7 @@ export const FooterLink = styled.a`
   ${media.tablet} {
     margin-left: 7.5px;
   }
-`;
+`
 
 export const External = styled(ExternalSVG)`
   position: absolute;
@@ -71,4 +71,4 @@ export const External = styled(ExternalSVG)`
     top: -2.2rem;
     left: 12.6rem;
   }
-`;
+`

@@ -11,12 +11,12 @@ import {
   TechnologyItem,
   RightArrow,
   TechnologiesList,
-} from "./styles";
-import { useOnScreen } from "../../hooks/useOnScreen";
-import { firstTechnologyList, secondTechnologyList } from "./technologies";
+} from './styles'
+import { useOnScreen } from '../../hooks/useOnScreen'
+import { firstTechnologyList, secondTechnologyList } from './technologies'
 
 export const About = () => {
-  const { isVisible, setIntersectingElement } = useOnScreen();
+  const { isVisible, setIntersectingElement } = useOnScreen()
 
   return (
     <AboutSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
@@ -65,5 +65,5 @@ export const About = () => {
         </TechnologiesContainer>
       </TechnologiesWrapper>
     </AboutSection>
-  );
-};
+  )
+}

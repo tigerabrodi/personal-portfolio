@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 import {
   WorkDescription,
   WorkList,
@@ -12,14 +12,14 @@ import {
   ItemTitle,
   Github,
   External,
-} from "./styles";
-import { useOnScreen } from "../../hooks/useOnScreen";
-import { projects } from "./projects";
+} from './styles'
+import { useOnScreen } from '../../hooks/useOnScreen'
+import { projects } from './projects'
 
 export const Projects = () => {
   const { isVisible, setIntersectingElement } = useOnScreen({
     threshold: 0.18,
-  });
+  })
 
   return (
     <WorkSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
@@ -72,5 +72,5 @@ export const Projects = () => {
         )}
       </WorkList>
     </WorkSection>
-  );
-};
+  )
+}

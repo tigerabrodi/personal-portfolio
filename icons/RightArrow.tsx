@@ -2,8 +2,8 @@ export const RightArrowIcon = ({
   className,
   id,
 }: {
-  className?: string;
-  id: number | string;
+  className?: string
+  id: number | string
 }) => {
   return (
     <svg
@@ -24,5 +24,5 @@ export const RightArrowIcon = ({
         </clipPath>
       </defs>
     </svg>
-  );
-};
+  )
+}

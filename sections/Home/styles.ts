@@ -1,7 +1,7 @@
-import styled, { keyframes } from "styled-components";
-import { media } from "../../theme/media";
-import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
-import { theme } from "../../theme/theme";
+import styled, { keyframes } from 'styled-components'
+import { media } from '../../theme/media'
+import { focusStyles, secondFocusStyles } from '../../theme/sharedStyles'
+import { theme } from '../../theme/theme'
 
 const fadeUp = keyframes`
   from {
@@ -13,7 +13,7 @@ const fadeUp = keyframes`
     transform: translateY(0);
     opacity: 1;
   }
-`;
+`
 
 export const HomeSection = styled.section`
   /* Calculate height on mobile */
@@ -24,7 +24,7 @@ export const HomeSection = styled.section`
   ${media.tablet} {
     height: 100vh;
   }
-`;
+`
 
 export const HomeWrapper = styled.div`
   height: 31.5rem;
@@ -68,7 +68,7 @@ export const HomeWrapper = styled.div`
     height: 63rem;
     top: 10%;
   }
-`;
+`
 
 export const HomeTitle = styled.h1`
   font-family: ${theme.Montserrat};
@@ -88,7 +88,7 @@ export const HomeTitle = styled.h1`
   ${media.laptop} {
     font-size: 9rem;
   }
-`;
+`
 
 export const HomeSubtitle = styled.h2`
   font-size: 2rem;
@@ -113,7 +113,7 @@ export const HomeSubtitle = styled.h2`
     font-size: 5.5rem;
     margin-top: 1.5rem;
   }
-`;
+`
 
 export const HomeDescription = styled.p`
   line-height: 1.3;
@@ -151,7 +151,7 @@ export const HomeDescription = styled.p`
     width: 73rem;
     margin-top: 4rem;
   }
-`;
+`
 
 export const LinkWrapper = styled.div`
   cursor: pointer;
@@ -177,7 +177,7 @@ export const LinkWrapper = styled.div`
       transition: transform 0.1s ease-out;
     }
   }
-`;
+`
 
 export const HomeLink = styled.a`
   color: ${theme.Orange};
@@ -213,7 +213,7 @@ export const HomeLink = styled.a`
   ${media.desktop} {
     font-size: 2.3rem;
   }
-`;
+`
 
 export const DescriptionLink = styled.a`
   color: ${theme.Pink};
@@ -227,7 +227,7 @@ export const DescriptionLink = styled.a`
     will-change: transform;
     transform-origin: left top;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: -0.35rem;
@@ -247,4 +247,4 @@ export const DescriptionLink = styled.a`
       }
     }
   }
-`;
+`

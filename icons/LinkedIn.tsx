@@ -1,5 +1,5 @@
 export const LinkedInIcon = () => {
-  const uniqueId = "linkedin";
+  const uniqueId = 'linkedin'
 
   return (
     <svg
@@ -17,5 +17,5 @@ export const LinkedInIcon = () => {
         </clipPath>
       </defs>
     </svg>
-  );
-};
+  )
+}

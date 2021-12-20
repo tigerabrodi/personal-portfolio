@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css } from 'styled-components'
 
 export const focusStyles = css`
   &:focus-visible {
@@ -8,7 +8,7 @@ export const focusStyles = css`
   &:focus:not(:focus-visible) {
     outline: none;
   }
-`;
+`
 
 export const secondFocusStyles = css`
   &:focus-visible {
@@ -17,4 +17,4 @@ export const secondFocusStyles = css`
   &:focus:not(:focus-visible) {
     outline: none;
   }
-`;
+`

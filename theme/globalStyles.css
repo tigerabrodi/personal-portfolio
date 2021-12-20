@@ -8,8 +8,8 @@
   --red: #f72405;
   --pink: #ffaa84;
   --darkbrown: #121517;
-  --montserrat: "Montserrat";
-  --oxanium: "Oxanium";
+  --montserrat: 'Montserrat';
+  --oxanium: 'Oxanium';
 }
 
 html {
@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--orange);
 }
 
-body div[id^="__next"] {
+body div[id^='__next'] {
   display: flex;
   align-items: center;
   justify-content: space-evenly;

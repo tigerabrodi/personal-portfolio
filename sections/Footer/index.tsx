@@ -1,17 +1,17 @@
-import Link from "next/link";
+import Link from 'next/link'
 import {
   Heart,
   FooterLink,
   FooterWrapper,
   FooterText,
   External,
-} from "./styles";
+} from './styles'
 
 export const Footer = () => {
   return (
     <FooterWrapper>
       <FooterText>
-        Built & Designed with <Heart role="img" aria-label="love" /> by{" "}
+        Built & Designed with <Heart role="img" aria-label="love" /> by{' '}
         <Link href="https://github.com/tigerabrodi" passHref>
           <FooterLink target="_blank" rel="noopener noreferrer">
             <External aria-hidden="true" />
@@ -20,5 +20,5 @@ export const Footer = () => {
         </Link>
       </FooterText>
     </FooterWrapper>
-  );
-};
+  )
+}

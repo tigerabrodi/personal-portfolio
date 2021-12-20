@@ -1,8 +1,8 @@
-import styled, { css, keyframes } from "styled-components";
-import NarutoFaceSVG from "../../assets/naruto-face.svg";
-import { media } from "../../theme/media";
-import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
-import { theme } from "../../theme/theme";
+import styled, { css, keyframes } from 'styled-components'
+import NarutoFaceSVG from '../../assets/naruto-face.svg'
+import { media } from '../../theme/media'
+import { focusStyles, secondFocusStyles } from '../../theme/sharedStyles'
+import { theme } from '../../theme/theme'
 
 const fadeUp = keyframes`
   from {
@@ -14,7 +14,7 @@ const fadeUp = keyframes`
     transform: translateY(0);
     opacity: 1;
   }
-`;
+`
 
 export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
   width: 100%;
@@ -43,7 +43,7 @@ export const NavigationWrapper = styled.nav<{ shouldShowShadow: boolean }>`
   ${media.desktop} {
     padding: 0 30px;
   }
-`;
+`
 
 export const NavigationTabletWrapper = styled.div`
   ${media.tablet} {
@@ -53,7 +53,7 @@ export const NavigationTabletWrapper = styled.div`
     width: 60%;
     height: 100%;
   }
-`;
+`
 
 export const LogoLink = styled.a`
   text-decoration: none;
@@ -70,7 +70,7 @@ export const LogoLink = styled.a`
   ${media.laptop} {
     font-size: 3.8rem;
   }
-`;
+`
 
 export const NarutoFace = styled(NarutoFaceSVG)`
   height: 4.2rem;
@@ -85,7 +85,7 @@ export const NarutoFace = styled(NarutoFaceSVG)`
     height: 60px;
     width: 60px;
   }
-`;
+`
 
 export const IconsWrapper = styled.div`
   position: fixed;
@@ -128,7 +128,7 @@ export const IconsWrapper = styled.div`
   ${media.laptop} {
     left: 25px;
   }
-`;
+`
 
 export const IconLink = styled.a`
   width: 2rem;
@@ -200,7 +200,7 @@ export const IconLink = styled.a`
       }
     }
   }
-`;
+`
 
 export const MobileNavigationWrapper = styled.div`
   width: 100%;
@@ -223,7 +223,7 @@ export const MobileNavigationWrapper = styled.div`
   ${media.tablet} {
     display: none;
   }
-`;
+`
 
 export const NavLink = styled.a`
   text-decoration: none;
@@ -264,7 +264,7 @@ export const NavLink = styled.a`
       font-size: 2.4rem;
     }
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: -0.2rem;
@@ -290,7 +290,7 @@ export const NavLink = styled.a`
       transition: transform 0.1s ease-out;
     }
   }
-`;
+`
 
 export const LinkText = styled.span`
   font-family: ${theme.Oxanium};
@@ -305,7 +305,7 @@ export const LinkText = styled.span`
   ${media.desktop} {
     font-size: 2.4rem;
   }
-`;
+`
 
 export const SkipLink = styled.a`
   position: absolute;
@@ -343,7 +343,7 @@ export const SkipLink = styled.a`
       width: 24rem;
     }
   }
-`;
+`
 
 export const IntersectingElement = styled.div`
   height: 0.2rem;
@@ -354,4 +354,4 @@ export const IntersectingElement = styled.div`
   background-color: transparent;
   visibility: hidden;
   z-index: -1000;
-`;
+`

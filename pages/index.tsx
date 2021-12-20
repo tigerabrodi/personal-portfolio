@@ -1,20 +1,20 @@
-import * as React from "react";
-import type { NextPage } from "next";
-import Head from "next/head";
-import { About } from "../sections/About";
-import { Contact } from "../sections/Contact";
-import { Experience } from "../sections/Experience";
-import { Footer } from "../sections/Footer";
-import { Home } from "../sections/Home";
-import { Navigation } from "../sections/Navigation";
-import { Projects } from "../sections/Projects";
+import * as React from 'react'
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import { About } from '../sections/About'
+import { Contact } from '../sections/Contact'
+import { Experience } from '../sections/Experience'
+import { Footer } from '../sections/Footer'
+import { Home } from '../sections/Home'
+import { Navigation } from '../sections/Navigation'
+import { Projects } from '../sections/Projects'
 
-const title = "Tiger Abrodi's Portfolio";
+const title = "Tiger Abrodi's Portfolio"
 const description =
-  "Tiger Abrodi's work, story, and contact information. Naruto's Sage Mode is on, because I'm his student!";
+  "Tiger Abrodi's work, story, and contact information. Naruto's Sage Mode is on, because I'm his student!"
 
 const Page: NextPage = () => {
-  const mainRef = React.useRef<null | HTMLElement>(null);
+  const mainRef = React.useRef<null | HTMLElement>(null)
 
   return (
     <>
@@ -46,7 +46,7 @@ const Page: NextPage = () => {
       </main>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page

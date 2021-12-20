@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
-import { media } from "../../theme/media";
-import { focusStyles, secondFocusStyles } from "../../theme/sharedStyles";
-import { theme } from "../../theme/theme";
+import styled, { css } from 'styled-components'
+import { media } from '../../theme/media'
+import { focusStyles, secondFocusStyles } from '../../theme/sharedStyles'
+import { theme } from '../../theme/theme'
 
 export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
   width: 100%;
@@ -27,7 +27,7 @@ export const ContactSection = styled.section<{ shouldFadeIn: boolean }>`
       transform: translateY(-2rem);
       opacity: 1;
     `};
-`;
+`
 
 export const ContactTitle = styled.h2`
   grid-area: title;
@@ -41,7 +41,7 @@ export const ContactTitle = styled.h2`
   ${media.desktop} {
     font-size: 8rem;
   }
-`;
+`
 
 export const ContactDescription = styled.p`
   grid-area: description;
@@ -63,7 +63,7 @@ export const ContactDescription = styled.p`
   ${media.desktop} {
     width: 41ch;
   }
-`;
+`
 
 export const DescriptionLink = styled.a`
   color: ${theme.Pink};
@@ -76,7 +76,7 @@ export const DescriptionLink = styled.a`
     transition: transform 0.3s ease-out;
     transform-origin: top left;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: -0.3rem;
@@ -102,7 +102,7 @@ export const DescriptionLink = styled.a`
       transition: transform 0.1s ease-out;
     }
   }
-`;
+`
 
 export const ContactLink = styled.a`
   grid-area: link;
@@ -140,4 +140,4 @@ export const ContactLink = styled.a`
       box-shadow: 0 2px 2px black;
     }
   }
-`;
+`
