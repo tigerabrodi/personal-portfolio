@@ -138,7 +138,7 @@ export const AccordionContent = styled.ul`
   visibility: hidden;
   position: relative;
   bottom: 0.5rem;
-  height: 10rem;
+  height: 15rem;
   transition: all 0.25s ease-in;
   border: 2px solid ${theme.Orange};
   border-bottom-right-radius: 10px;
