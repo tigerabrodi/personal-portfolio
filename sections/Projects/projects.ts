@@ -31,16 +31,6 @@ export const projects = [
     ariaLabel: 'Show casing my project Madara',
   },
   {
-    title: 'Raveny',
-    description:
-      'A website where people can find recipes and find them based on different criteria.',
-    demoSource: '/assets/raveny.mp4',
-    sourceCodeLink: 'https://github.com/tigerabrodi/Raveny',
-    liveVersionLink: 'https://raveny.netlify.app/',
-    id: v4(),
-    ariaLabel: 'Show casing my project Raveny',
-  },
-  {
     title: 'Konoha',
     description: 'A simple way to search for Anime/Manga characters.',
     demoSource: '/assets/konoha.mp4',
