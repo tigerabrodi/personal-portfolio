@@ -12,7 +12,7 @@ export const ExperienceSection = styled.section<{ shouldFadeIn: boolean }>`
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
-  transition: transform 1s ease-out, opacity 2s ease-out;
+  transition: transform 0.7s ease-out, opacity 1.2s ease-out;
   opacity: 0;
   transform: translateY(2rem);
   ${(props) =>
