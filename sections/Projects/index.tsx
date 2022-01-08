@@ -18,7 +18,7 @@ import { projects } from './projects'
 
 export const Projects = () => {
   const { isVisible, setIntersectingElement } = useOnScreen({
-    threshold: 0.18,
+    threshold: 0.1,
   })
 
   return (
