@@ -20,11 +20,11 @@ import {
 } from './styles'
 
 export const Experience = () => {
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [openStates, setOpenStates] = React.useState<Record<number, boolean>>({1: false, 2: false})
 
   const { isVisible, setIntersectingElement } = useOnScreen({ threshold: 0.5 })
 
-  const toggleOpenState = () => setIsOpen(!isOpen)
+  const toggleOpenState = (id: number) => setOpenStates({...openStates, [id]: !openStates[id]})
 
   return (
     <ExperienceSection ref={setIntersectingElement} shouldFadeIn={isVisible}>
@@ -39,23 +39,23 @@ export const Experience = () => {
           <ExperienceItem key={id}>
             <AccordionButton
               aria-controls={`content-${id}`}
-              aria-expanded={isOpen ? 'true' : 'false'}
+              aria-expanded={openStates[id] ? 'true' : 'false'}
               type="button"
-              onClick={toggleOpenState}
+              onClick={() => toggleOpenState(id)}
             >
               <AccordionButtonTextWrapper>
                 <AccordionButtonText>{company}</AccordionButtonText>
                 <AccordionButtonText>{role}</AccordionButtonText>
                 <AccordionButtonText>{date}</AccordionButtonText>
               </AccordionButtonTextWrapper>
-              {isOpen ? (
+              {openStates[id] ? (
                 <AccordionCloseArrow aria-hidden="true" />
               ) : (
                 <AccordionOpenArrow aria-hidden="true" />
               )}
             </AccordionButton>
             <AccordionContent
-              aria-hidden={isOpen ? 'false' : 'true'}
+              aria-hidden={openStates[id] ? 'false' : 'true'}
               id={`content-${id}`}
             >
               {contributions.map((contribution) => (

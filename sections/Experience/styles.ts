@@ -59,6 +59,8 @@ export const ExperienceItemList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
+  row-gap: 40px;
   width: 100%;
   margin-top: 40px;
   ${media.tablet} {
