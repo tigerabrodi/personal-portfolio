@@ -31,7 +31,7 @@ export const About = () => {
           back in 2016.
         </AboutText>
         <AboutText>
-          I started working as a Frontend Developer in July 2020, and ever
+          I started working as a Software Engineer back in July 2020, and ever
           since, it has been a wonderful adventure for me.
         </AboutText>
         <AboutText>
