@@ -11,6 +11,7 @@ export const firstTechnologyList = [
   { text: 'XP Practices', id: v4() },
   { text: 'Remix', id: v4() },
   { text: 'Tailwind', id: v4() },
+  { text: 'Material UI', id: v4() },
 ]
 
 export const secondTechnologyList = [
@@ -24,4 +25,5 @@ export const secondTechnologyList = [
   { text: 'Testing Library', id: v4() },
   { text: 'Planetscale', id: v4() },
   { text: 'Prisma', id: v4() },
+  { text: 'Zod', id: v4() },
 ]
